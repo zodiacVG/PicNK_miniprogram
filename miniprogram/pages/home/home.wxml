@@ -1,0 +1,20 @@
+<!--pages/home/home.wxml-->
+<image src="">这会是一张不知道是什么样的图</image>
+
+<van-devider />
+<van-row>
+  <van-col span="12">
+    <button class="smalldiv" bindtap='gotoStudy'>约自习</button>
+  </van-col>
+  <van-col span="12">
+    <button class="smalldiv" bindtap='gotoRunning'>约跑步</button>
+  </van-col>
+</van-row>
+<van-row>
+  <van-col span="12">
+    <button class="smalldiv" bindtap='gotoTaxi'>约车</button>
+  </van-col>
+  <van-col span="12">
+    <button class="smalldiv" bindtap='gotoRepast'>约饭</button>
+  </van-col>
+</van-row>

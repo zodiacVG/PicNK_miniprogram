@@ -1,0 +1,12 @@
+/* pages/home/home.wxss */
+.image{
+  width: 375rpx;
+  height: 375rpx;
+  border: 2;
+}
+
+.smalldiv{
+  padding-top: 60rpx;
+  text-align: center;
+  color: #89725B;
+}

@@ -1,0 +1,18 @@
+/* pages/allmyPics/allmyPics.wxss */
+.custom-class{
+  --card-background-color: #B0CC99;
+}
+.desc-class{
+  --card-desc-color: #F6F6F6;
+  color: #677E52;
+  margin: 20rpx;
+}
+.title-class{
+  color: #89725B;
+  font-size: 130%;
+  margin: 20rpx;
+}
+.thumb-class{
+  border-radius: 15rpx;
+  border: 1rpx solid #B7CA79;
+}

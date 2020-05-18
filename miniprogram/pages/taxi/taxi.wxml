@@ -1,0 +1,25 @@
+<!--pages/taxi/taxi.wxml-->
+<van-row class="header">
+  <van-col span="24">约车</van-col>
+</van-row>
+
+<form bindsubmit="onSubmit">
+
+<image class="image-class" src=""><text>这里将会是一张图片🤦‍♀️</text></image>
+<van-cell-group class="cell-group-class" border="false">
+  <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+    <view class="btn">点击选择出发日期 {{date}}</view>
+  </picker>
+  <picker mode="time" value="{{time}}" bindchange="bindTimeChange">
+    <view class="btn">点击选择出发时间 {{time}}</view>
+  </picker>
+  <button class="btn">地图选起点</button>
+  <button class="btn">地图选终点</button>
+  <view class="memo">
+    <van-field value="{{item.memo}}" label="备注" placeholder="还有啥要求都写下来吧" 
+    border="{{false}}" name="" />
+  </view>
+  <button class="btn" form-type="submit">提交</button>
+</van-cell-group>
+
+</form>

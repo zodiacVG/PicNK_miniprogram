@@ -1,0 +1,36 @@
+<!--pages/editInfo/editInfo.wxml-->
+<!-- <block wx:for="{{userList}}"> -->
+<form bindsubmit="onSubmit">
+  <van-col span="22" offset="1">
+  <van-cell-group class="cell-group-class" border="{{false}}">
+    <view class="card">
+      <van-card custom-class="custom-class" thumb-class="thumb-class" thumb="{{image}}">
+        <van-button class="tag-class" icon="photo-o" round size="small"
+          type="default" bindtap="editImage">更改头像</van-button>
+      </van-card>
+      <van-filed value="{{item.nickName}}" label="姓名" placeholder="姓名"  
+      border="{{false}}" name="nickName" />
+      <van-field value="{{item.gender}}" label="性别" placeholder="性别"
+      border="{{false}}" name="gender" />
+      <van-field value="{{item.age}}" label="年龄" placeholder="年龄"
+      border="{{false}}" name="age" />
+    </view>
+  </van-cell-group>
+  </van-col>
+  <van-col span="22" offset="1">
+  <van-cell-group class="cell-group-class" title="学历相关" border="{{false}}">
+    <view class="card">
+      <van-field value="{{item.university}}" label="学校" placeholder="学校"
+      border="{{false}}" name="university" />
+      <van-field value="{{item.major}}" label="专业" placeholder="专业"
+      border="{{false}}" name="major" />
+      <van-field value="{{item.grade}}" label="年级" placeholder="请填入学年份"
+      border="{{false}}" name="grade" />
+      <van-field value="{{item.diploma}}" label="学历" placeholder="学历"
+      border="{{false}}" name="diploma" />
+    </view>
+  </van-cell-group>
+  </van-col>
+  <button class="btn" form-type="submit">提交</button>
+</form>
+<!-- </block> -->

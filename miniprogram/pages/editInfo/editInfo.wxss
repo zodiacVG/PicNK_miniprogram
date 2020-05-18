@@ -1,0 +1,22 @@
+/* pages/editInfo/editInfo.wxss */
+.cell-group-class{
+  --cell-background-color: #F9F0E7;
+}
+.card{
+  background-color: #F9F0E7;
+	border-radius: 10rpx; 
+  padding: 10rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: larger;
+}
+.custom-class{
+  --card-background-color: #F9F0E7;
+}
+.thumb-class{
+  border-radius: 50%;
+  border: 5rpx solid #B7CA79;
+}
+.tagclass{
+  border-radius: 20rpx;
+}

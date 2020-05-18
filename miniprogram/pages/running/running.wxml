@@ -1,0 +1,27 @@
+<!--pages/running/running.wxml-->
+<van-row class="header">
+  <van-col span="24">约跑步</van-col>
+</van-row>
+
+<form bindsubmit="onSubmit">
+<image class="image-class" src=""><text>这里将会是一张图片🤦‍♀️</text></image>
+
+<van-cell-group class="cell-group-class" border="{{false}}">
+    <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+      <view class="btn">点击选择跑步日期 {{date}}</view>
+    </picker>
+    <picker mode="time" value="{{time}}" bindchange="bindTimeChange">
+      <view class="btn">点击选择开始时间 {{time}}</view>
+    </picker>
+  <picker mode="selector" value="{{index}}" bindchange="bindPickerChange" range="{{array}}">
+    <view class="btn"> 点击选择公里数 {{array[index]}}</view>
+  </picker>
+  <view class="btn">跑步起点地图靠你们了❗️</view>
+  <view class="memo">
+    <van-field value="{{item.memo}}" label="备注" placeholder="≥6公里的自己写！自己写！！" 
+    border="{{false}}" name="" />
+  </view>
+  <button class="btn" form-type="submit">提交</button>
+</van-cell-group>
+
+</form>
