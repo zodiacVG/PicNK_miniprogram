@@ -1,0 +1,50 @@
+/* pages/me/me.wxss */
+
+.mainCard{
+  background-color: #B0CC99;
+  padding: 40rpx;
+}
+.custom-class{
+  --card-background-color: #B0CC99;
+}
+.title-class{
+  color: #89725B;
+  font-size: 130%;
+  margin: 20rpx;
+}
+.desc-class{
+  --card-desc-color: #F6E8B1;
+  font-size: 100%;
+  margin: 20rpx;
+}
+.thumb-class{
+  clip-path: circle(50rpx at center);
+  border: 5rpx solid #89725B;
+}
+.tag-class{
+  margin-left: 20rpx;
+}
+.editInfo{
+  margin-left: 20rpx;
+}
+.container{
+  margin-left: 30rpx;
+}
+.hisPics{
+  border-radius: 10rpx;
+  padding: 20rpx;
+  margin: 40rpx;
+  box-shadow: 0 10rpx 30rpx ;
+  border: 1rpx solid #89725B;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100rpx;
+}
+.btn{
+  background-color: #F6E8B1;
+  width: auto;
+  height: 100rpx;
+  font-size: large;
+}

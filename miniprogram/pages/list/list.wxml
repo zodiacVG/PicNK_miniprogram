@@ -1,0 +1,21 @@
+ <!-- pages/list/list.wxml  -->
+<van-search value="{{value}}" placeholder="Search" />
+<block wx:for="{{list}}">
+  <navigator url="../detail/detail?id={{item._id}}">
+    <van-card custom-class="custom-class" centered="true" 
+    desc="{{item.request}}" desc-class="desc-class"
+    title="{{item.nickName}}" title-class="title-class" 
+    thumb="{{item.avatarUrl}}" thumb-class="thumb-class">
+    <view slot="tags">
+      <block wx:if="{{item.gender}}">
+        <van-tag plain class="tag-class">
+          <van-icon name="award-o" />{{(item.gender === 2)||(item.gender === '女')?'女':'男'}}</van-tag>
+      </block>
+      <block wx:if="{{item.old}}">
+        <van-tag plain class="tag-class">
+          <van-icon name="contact" />{{item.old}}</van-tag>
+      </block>
+    </view>
+    </van-card>
+  </navigator>
+</block>

@@ -1,0 +1,49 @@
+<!--pages/study/study.wxml-->
+<van-row class="header">
+  <van-col span="24">约自习</van-col>
+</van-row>
+
+<form bindsubmit="onSubmit">
+<image class="image-class" src=""><text>这里将会是一张图片🤦‍♀️</text></image>
+<van-row type="flex" justify="space-around">
+  <van-col span="20" offset="2">
+    <!-- <button class="btn" bindtap="showPopup">请选择自习日期</button> -->
+      <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+        <view class="btn">点击选择自习日期 {{date}}</view>
+      </picker>
+  </van-col>
+</van-row>
+<van-row type="flex" justify="space-around">
+  <van-col span="9" offset="2">
+    <picker mode="time" value="{{start_time}}" bindchange="startTimeChange">
+      <view class="btn">开始时间 {{start_time}}</view>
+    </picker>
+  </van-col>
+  <van-col span="9" offset="2">
+    <picker mode="time" value="{{end_time}}" bindchange="endTimeChange">
+      <view class="btn">结束时间 {{end_time}}</view>
+    </picker>
+  </van-col>
+</van-row>
+<van-row type="flex" justify="space-around">
+  <van-col span="20" offset="2">
+    <button class="btn" bindtap="showMap">
+    地图API就靠你们了大兄dei们❗️</button>
+  </van-col>
+</van-row>
+<van-row>
+  <van-col span="20" offset="2">
+    <view class="memo">
+    <van-field
+    value="{{item.memo}}" label="备注" placeholder="满足你别的小要求哟～" 
+    border="{{false}}" name="" />
+    </view>
+  </van-col>
+</van-row>
+<van-row type="flex" justify="space-around">
+  <van-col span="20" offset="2">
+    <button class="btn" form-type="submit">提交</button>
+  </van-col>
+</van-row>
+
+</form>

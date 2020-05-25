@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/list/list",
+    "pages/me/me",
+    "pages/editInfo/editInfo",
+    "pages/login/login",
+    "pages/taxi/taxi",
+    "pages/running/running",
+    "pages/study/study",
+    "pages/repast/repast",
+    "pages/detail/detail",
+    "pages/allmyPics/allmyPics",
+    "pages/map/map"
+  ],
+  "window": {
+    "backgroundColor": "#F6E8B1",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "PicNKers",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#707070",
+    "backgroundColor": "#F6F6F6",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "Home",
+        "iconPath": "pages/images/home.png",
+        "selectedIconPath": "pages/images/home2.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "allPics",
+        "iconPath": "pages/images/list.png",
+        "selectedIconPath": "pages/images/list2.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "Me",
+        "iconPath": "pages/images/home.png",
+        "selectedIconPath": "pages/images/home2.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-divider": "@vant/weapp/divider",
+    "van-button": "@vant/weapp/button",
+    "van-card": "@vant/weapp/card",
+    "van-icon": "@vant/weapp/icon",
+    "van-tag": "@vant/weapp/tag",
+    "van-datatime-picker": "@vant/weapp/datetime-picker",
+    "van-row": "@vant/weapp/row",
+    "van-col": "@vant/weapp/col",
+    "van-search": "@vant/weapp/search",
+    "van-cell": "@vant/weapp/cell",
+    "van-cell-group": "@vant/weapp/cell-group",
+    "van-calendar": "@vant/weapp/calendar",
+    "van-popup": "@vant/weapp/popup",
+    "van-field": "@vant/weapp/field"
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

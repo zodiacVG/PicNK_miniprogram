@@ -1,0 +1,8 @@
+<!--pages/login/login.wxml-->
+<!-- <text>pages/login/login.wxml</text> -->
+<view class="logo-class">
+  <image class="logo-picture" src=""></image>
+</view>
+<van-button class="loginBtn" round color="#B7CA79" plain size="large"
+  open-type="getUserInfo" bindgetuserinfo="getUserInfo">微信授权登陆
+</van-button>

@@ -1,0 +1,35 @@
+<!--pages/me/me.wxml-->
+<!-- <block wx:key="{{userList}}"> -->
+  <view class="mainCard">
+    <van-card custom-class="custom-class" centered="true" currency=""
+    price-class="price-class" desc="{{item.need}}" desc-class="desc-class"
+    title="{{item.nickName}}" title-class="title-class" 
+    thumb-class="thumb-class" thumb="{{item.avatarUrl}}">
+      <view slot="tags">
+        <block wx:if="{{item.gender}}">
+          <van-tag plain class="tag-class">
+            <van-icon name="award-o" />{{(item.gender===2)||
+            (item.genter==='女')?'女':'男'}}
+          </van-tag>
+        </block>
+        <block wx:if="{{item.age}}">
+          <van-tag plain class="tag-class">
+            <van-icon name="contact" />{{item.age}}
+          </van-tag>
+        </block>
+      </view>
+      <view slot="footer" class="editInfo">
+        <navigator url="../editInfo/editInfo">
+          <van-button icon="edit" size="small" type="default">编辑资料</van-button>
+        </navigator>
+      </view>
+    </van-card>
+  </view>
+  <view class="card">
+    <navigator url="../allmyPics/allmyPics">
+      <button class="btn" icon="clock-o">我的历史Pics</button>
+    </navigator>
+    <button class="btn" icon="info-o" url="">版本说明</button>
+    <button class="btn" icon="contact" url="">联系开发者</button>
+  </view>
+<!-- </block> -->
